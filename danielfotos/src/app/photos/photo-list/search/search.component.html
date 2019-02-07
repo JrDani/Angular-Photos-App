@@ -1,0 +1,13 @@
+<div class="container mt-3 mb-3">
+    <form class="form-horizontal">
+        <div class="form-group row">
+            <label class="col-1 control-label text-right pt-1">
+                <i aria-hidden="true" class="fa fa-search"></i>
+            </label>
+            <div class="col-11">
+                <input type="text" placeholder="Search.." autofocus  class="form-control rounded"
+                (keyup)="debounce.next($event.target.value)" [value]="value" />
+            </div>
+        </div>
+    </form>
+</div>
